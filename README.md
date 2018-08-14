@@ -7,7 +7,7 @@ We provide YAGO39K and M-YAGO39K dataset we used in this work in data/YAGO39K di
 data/YAGO39K/Train
 
 * instance2id.txt, concept2id.txt, relation2id.txt: the id of every instance, concept and relation in this dataset.
-* triple2id.txt: normal triples represented as ids with format [head_instance_id tail_instance_id, relation_id].
+* triple2id.txt: normal triples represented as ids with format [head_instance_id tail_instance_id relation_id].
 * instanceOf2id.txt: instanceOf triples represented as ids with format [instance_id concept_id].
 * subClassOf2id.txt: subClassOf triples represented as ids with format [sub_concept_id concept_id].
 
@@ -57,7 +57,9 @@ You can add the following optional parameters when running transC:
 
 The Vectors of entities, concepts and relations will be stored in the folder vector/ after training.
 
-## Test
+## Experiment
+
+### Link Precidtion
 
 For Link Prediction experiment, you need to
 
@@ -72,6 +74,8 @@ You can add the following optional parameters when running test_link_prediction:
 * -data: the dataset that you want to use. You can only choose YAGO39K in current vision. 
 * -threads: how many threads you want to use.
 
+### Normal Triple Classification
+
 For normal Triple Classification experiment, you need to
 
 ```shell
@@ -83,6 +87,8 @@ You can add the following optional parameters when running test_triple_classific
 
 - -dim: the vector size.
 - -data: the dataset that you want to use. You can only choose YAGO39K in current vision. 
+
+### InstanceOf and SubClassOf Triple Classification
 
 For instanceOf and subClassOf Triple Classification experiments, you need to
 
