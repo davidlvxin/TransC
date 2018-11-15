@@ -1,5 +1,5 @@
 # Differentiating Concepts and Instances for Knowledge Graph Embedding
-Source code and datasets of EMNLP2018 paper: "Differentiating Concepts and Instances for Knowledge Graph Embedding".
+Source code and datasets of EMNLP2018 paper: "Differentiating Concepts and Instances for Knowledge Graph Embedding".  https://arxiv.org/abs/1811.04588
 
 ## Dataset
 We provide YAGO39K and M-YAGO39K dataset we used in this work in data/YAGO39K directory. The meanings of these files are explained as follows:
