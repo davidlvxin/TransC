@@ -126,14 +126,14 @@ void* prepareMode(void *con) {
 void prepare() {
     FILE *fin;
     long tmp;
-    fin = fopen(("vector/" + dataSet + "/entity2vec.vec").c_str(), "r");
+    fin = fopen(("../vector/" + dataSet + "/entity2vec.vec").c_str(), "r");
     for (long i = 0; i < entityTotal; i++) {
         long last = i * dimension;
         for (long j = 0; j < dimension; j++)
             tmp = fscanf(fin, "%f", &entityVec[last + j]);
     }
     fclose(fin);
-    fin = fopen(("vector/" + dataSet + "/relation2vec.vec").c_str(), "r");
+    fin = fopen(("../vector/" + dataSet + "/relation2vec.vec").c_str(), "r");
     for (long i = 0; i < relationTotal; i++) {
         long last = i * dimension;
         for (long j = 0; j < dimension; j++)

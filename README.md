@@ -80,7 +80,7 @@ For normal Triple Classification experiment, you need to
 
 ```shell
 cd src
-./test_triple_classification_normal
+./test_classification_normal
 ```
 
 You can add the following optional parameters when running test_triple_classification_normal:
@@ -94,7 +94,7 @@ For instanceOf and subClassOf Triple Classification experiments, you need to
 
 ```shell
 cd src
-./test_triple_classification_isA
+./test_classification_isA
 ```
 
 You can add the following optional parameters when running test_triple_classification_isA:
