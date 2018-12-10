@@ -128,8 +128,8 @@ void prepare(){
     tmp = fscanf(fin_num, "%d", &concept_num);
     fclose(fin_num);
 
-    FILE* f1 = fopen(("vector/" + dataSet + "/entity2vec.vec").c_str(), "r");
-    FILE* f2 = fopen(("vector/" + dataSet + "/concept2vec.vec").c_str(), "r");
+    FILE* f1 = fopen(("../vector/" + dataSet + "/entity2vec.vec").c_str(), "r");
+    FILE* f2 = fopen(("../vector/" + dataSet + "/concept2vec.vec").c_str(), "r");
     entity_vec.resize(entity_num);
     for(int i = 0; i < entity_num; ++i){
         entity_vec[i].resize(dim);

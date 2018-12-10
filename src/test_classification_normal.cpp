@@ -97,8 +97,8 @@ void prepare(bool final_test = false){
     }
     fin.close(); fin_right.close();
 
-    FILE* f1 = fopen(("vector/" + dataSet + "/entity2vec.vec").c_str(), "r");
-    FILE* f2 = fopen(("vector/" + dataSet + "/relation2vec.vec").c_str(), "r");
+    FILE* f1 = fopen(("../vector/" + dataSet + "/entity2vec.vec").c_str(), "r");
+    FILE* f2 = fopen(("../vector/" + dataSet + "/relation2vec.vec").c_str(), "r");
     entity_vec.resize(entity_num);
     for(int i = 0; i < entity_num; ++i){
         entity_vec[i].resize(dim);
