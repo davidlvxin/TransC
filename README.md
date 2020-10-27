@@ -30,7 +30,6 @@ data/YAGO39K/M-Test
 
 ## Codes
 The source codes of our work are put in the folder src/.
-
 ## Compile
 
 ```shell
@@ -39,6 +38,7 @@ make
 ```
 
 ## Train
+
 
 ```shell
 cd src
@@ -56,6 +56,16 @@ You can add the following optional parameters when running transC:
 * -bern: it can be 1 or 0, 1 means using "bern" strategy and 0 means using "unif" strategy.
 
 The Vectors of entities, concepts and relations will be stored in the folder vector/ after training.
+
+### Python Code
+There is also python code for the training part, in py_version/
+The python version can be run with
+
+```
+python -m py_version.transc
+```
+
+The outputs are stored in the same format and location with cpp version.
 
 ## Experiment
 
@@ -106,4 +116,4 @@ You can add the following optional parameters when running test_triple_classific
 ## Cite
 If you use the code, please cite this paper:
 
-Xin Lv, Lei Hou, Juanzi Li, Zhiyuan Liu. Differentiating Concepts and Instances for Knowledge Graph Embedding. *The Conference on Empirical Methods in Natural Language Processing (EMNLP 2018)*.
+Xin Lv, Lei Hou, Juanzi Li, Zhiyuan Liu. Differentiating Concepts and Instances for Knowledge Graph Embedding. *The Conference on Empirical Methods in Natural Language Processing (EMNLP 2018)*L.
